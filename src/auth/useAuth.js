@@ -11,3 +11,4 @@ export const useAuth = () => {
 
   return { loginWithRedirect, logout, user, isAuthenticated, isLoading };
 };
+ 
