@@ -1,5 +1,7 @@
 import React from "react";
 import { Auth0Provider } from "@auth0/auth0-react";
+// import dotenv from 'dotenv'
+// dotenv.config();
 
 // /api/v2/clients/{id}
 const Auth0ProviderWithHistory = ({ children }) => {
