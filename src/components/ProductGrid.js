@@ -3,7 +3,6 @@ import axios from "axios";
 import SearchBar from "./SearchBar";
 import Navbar from "./Navbar";
 import Loader from "./Loader";
-// import ProductCard from "./ProductCard";
 
 import { motion } from "framer-motion";
 import { FaPlus } from "react-icons/fa";
@@ -96,6 +95,7 @@ const ProductGrid = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       {filteredProducts.map((product) => (
         <motion.div
+        whileHover={{ scale: 1.05 }}
           key={product.id}
           className="p-4 border rounded-lg shadow-md bg-white relative"
         >
