@@ -14,7 +14,7 @@ const Navbar = ({ categories, activeCategory, filterByCategory, cart, setCart })
           <button
             key={category}
             className={`px-4 py-2 rounded-md ${
-              activeCategory === category ? "bg-white text-black" : "bg-white sm:text-"
+              activeCategory === category ? "bg-white text-black" : "bg-white text-black"
             }`}
             onClick={() => filterByCategory(category)}
           >
@@ -40,7 +40,7 @@ const Navbar = ({ categories, activeCategory, filterByCategory, cart, setCart })
         ) : (
           <button
             onClick={loginWithRedirect}
-            className="bg-blue-500 px-4 py-2 m-2 rounded"
+            className="bg-blue-500 px-4 py-2 m-2 rounded text-white"
           >
             Login
           </button>
